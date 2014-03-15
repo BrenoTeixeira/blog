@@ -7,6 +7,7 @@
         <title>Welcome!</title>
 
         <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ STATIC_URL }}css/style.css" rel="stylesheet">
 
     </head>
     <body>
@@ -19,9 +20,9 @@
 
                     <hr style="margin-bottom:0px">
                     <ul class="nav nav-pills">
-                          <li><a style="color:black" href="#">HOME</a></li>
-                          <li><a style="color:black" href="#">SOBRE O AUTOR</a></li>
-                          <li><a style="color:black" href="#">CONTATO</a></li>
+                          <li><a style="color:black" href="#">BLOG</a></li>
+                          <li><a style="color:black" href="#">AUTHOR</a></li>
+                          <li><a style="color:black" href="#">CONTACT</a></li>
                     </ul>
                     <hr style="margin:0px">
                 </div>
@@ -54,8 +55,6 @@
                         <a href="#"><span class="label label-info">Bootstrap</span></a> 
                         <a href="#"><span class="label label-info">UI</span></a> 
                         <a href="#"><span class="label label-info">growth</span></a>
-                        | <i class="icon-user"></i> <a href="#">Admin</a> 
-                        | <i class="icon-calendar"></i> Sept 16th, 2012 at 4:20 pm
                         | <i class="icon-comment"></i> <a href="#">3 Comments</a>
                         | <i class="icon-share"></i> <a href="#">39 Shares</a>
                   </p>
@@ -87,8 +86,6 @@
                         <a href="#"><span class="label label-info">Bootstrap</span></a> 
                         <a href="#"><span class="label label-info">UI</span></a> 
                         <a href="#"><span class="label label-info">growth</span></a>
-                        | <i class="icon-user"></i> <a href="#">Admin</a> 
-                        | <i class="icon-calendar"></i> Sept 16th, 2012 at 4:20 pm
                         | <i class="icon-comment"></i> <a href="#">3 Comments</a>
                         | <i class="icon-share"></i> <a href="#">39 Shares</a>
                   </p>
@@ -109,7 +106,7 @@
 
                 <aside class="col-md-2">
 
-                <form class="navbar-form" role="search">
+                <form style="padding:0px" class="navbar-form" role="search">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search" name="q">
                     <div class="input-group-btn">
@@ -118,20 +115,26 @@
                 </div>
                 </form>
 
-                  <h5>Categories</h5>
+                  <div class="sidebar-module sidebar-module-inset">
+                    <h5><strong>ABOUT ME</strong></h5>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif">Passionate and self-taught web developer interested in agile methods.</p>
+                  </div>
+
+                  <h5>CATEGORIES</h5>
                   <ul class="side-nav">
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Code</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">Django</a></li>
                     <li><a href="#">Design</a></li>
-                    <li><a href="#">Fun</a></li>
-                    <li><a href="#">Weasels</a></li>
+                    <li><a href="#">Android</a></li>
                   </ul>
 
-                  <div class="panel">
-                    <h5>Featured</h5>
-                    <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
-                    <a href="#">Read More →</a>
-                  </div>
+                  <h5>ELSEWHERE</h5>
+                  <ul class="side-nav">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                  </ul>
 
                 </aside>
 
