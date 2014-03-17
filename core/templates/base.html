@@ -30,65 +30,9 @@
 
             <div class="row">
                 <div class="col-md-8 col-md-offset-1">
-                    <article>
 
-                    <h3><a href="#">Blog Post Title</a></h3>
-                    <h6>Written by <a href="#">John Smith</a> on August 12, 2012.</h6>
-
-                    <div class="row">
-                      <div class="col-md-5">
-                        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa.</p>
-                        <p>Boudin aliqua adipisicing rump corned beef. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-                      </div>
-                      <div class="col-md-5">
-                        <img src="http://placehold.it/400x240&amp;text=[img]">
-                      </div>
-                    </div>
-
-                    <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-
-                    <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-
-                  </article>
-                  <p>Tags: 
-                        <a href="#"><span class="label label-info">Snipp</span></a> 
-                        <a href="#"><span class="label label-info">Bootstrap</span></a> 
-                        <a href="#"><span class="label label-info">UI</span></a> 
-                        <a href="#"><span class="label label-info">growth</span></a>
-                        | <i class="icon-comment"></i> <a href="#">3 Comments</a>
-                        | <i class="icon-share"></i> <a href="#">39 Shares</a>
-                  </p>
-
-                  <hr>
-
-                    <article>
-
-                    <h3><a href="#">Blog Post Title</a></h3>
-                    <h6>Written by <a href="#">John Smith</a> on August 12, 2012.</h6>
-
-                    <div class="row">
-                      <div class="col-md-5">
-                        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa.</p>
-                        <p>Boudin aliqua adipisicing rump corned beef. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-                      </div>
-                      <div class="col-md-5">
-                        <img src="http://placehold.it/400x240&amp;text=[img]">
-                      </div>
-                    </div>
-
-                    <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-
-                    <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-
-                  </article>
-                  <p>Tags: 
-                        <a href="#"><span class="label label-info">Snipp</span></a> 
-                        <a href="#"><span class="label label-info">Bootstrap</span></a> 
-                        <a href="#"><span class="label label-info">UI</span></a> 
-                        <a href="#"><span class="label label-info">growth</span></a>
-                        | <i class="icon-comment"></i> <a href="#">3 Comments</a>
-                        | <i class="icon-share"></i> <a href="#">39 Shares</a>
-                  </p>
+                    {% block content %}
+                    {% endblock content %}
 
                   <div class="text-center">
                     <ul class="pagination pagination-sm">
@@ -134,6 +78,7 @@
                     <li><a href="#">GitHub</a></li>
                     <li><a href="#">Twitter</a></li>
                     <li><a href="#">Linkedin</a></li>
+                    <li><a href="#">Google+</a></li>
                   </ul>
 
                 </aside>
@@ -150,5 +95,5 @@
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
     </body>
