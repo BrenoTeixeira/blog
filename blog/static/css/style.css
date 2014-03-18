@@ -8,3 +8,12 @@ border-radius: 4px;
 padding: 15px;
 margin: 0 -15px 15px;
 }
+
+.nav-header a {
+    color: black;
+}
+
+.link-hover:hover {
+    text-decoration: none;
+    text-shadow: 2px 2px #eee;
+}

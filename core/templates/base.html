@@ -1,4 +1,4 @@
-<!DOCTYPE HML>
+<!DOCTYPE HTML>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -15,14 +15,14 @@
             
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <h1>Breno Teixeira</h1>
+                    <a class="link-hover" href="{% url 'core:home' %}"><h1>Breno Teixeira</h1></a>
                     <h3><small>Python, Django, Android and more!</small></h3>
 
                     <hr style="margin-bottom:0px">
-                    <ul class="nav nav-pills">
-                          <li><a style="color:black" href="#">BLOG</a></li>
-                          <li><a style="color:black" href="#">AUTHOR</a></li>
-                          <li><a style="color:black" href="#">CONTACT</a></li>
+                    <ul class="nav nav-pills nav-header">
+                          <li><a href="{% url 'core:blog' %}">BLOG</a></li>
+                          <li><a href="#">AUTHOR</a></li>
+                          <li><a href="#">CONTACT</a></li>
                     </ul>
                     <hr style="margin:0px">
                 </div>
@@ -74,11 +74,11 @@
 
                   <h5>ELSEWHERE</h5>
                   <ul class="side-nav">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">GitHub</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Linkedin</a></li>
-                    <li><a href="#">Google+</a></li>
+                    <li><a href="https://www.facebook.com/breno.teixeira.98" target="blank">Facebook</a></li>
+                    <li><a href="https://github.com/BrenoTeixeira" target="blank">GitHub</a></li>
+                    <li><a href="https://twitter.com/Breno_tx" target="blank">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/pub/breno-teixeira/47/b7b/917" target="blank">Linkedin</a></li>
+                    <li><a href="https://google.com/+BrenoTeixeiraD" target="blank">Google+</a></li>
                   </ul>
 
                 </aside>
@@ -97,3 +97,4 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
     </body>
+</html>
